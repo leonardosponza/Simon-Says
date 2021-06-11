@@ -47,11 +47,11 @@ setTimeout(function(){
     console.log(numeri);
 
 
-// funzione
-function randomnumber(min, max){
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+    // funzione
+    function randomnumber(min, max){
+       return Math.floor(Math.random() * (max - min + 1) ) + min;
+    }
 
-function array(array, push){
-    return array.includes(push);
-}
+    function array(array, push){
+       return array.includes(push);
+    }
