@@ -21,6 +21,9 @@ var countdown = setInterval(function(){
     }
 }, 1000);
 
+
+ var giusto = [];
+ var sbagliato = []
 setTimeout(function(){
     for(i=0; i<numeri.length; i++){
         var risposta = prompt("Inserisci i numeri");
@@ -35,9 +38,11 @@ setTimeout(function(){
             giusto.push(risposta);
         }else if(!array(numeri, risposta)){
             sbagliato.push(risposta);
+        
         }
-    }
     
+    }
+
     document.getElementById("risultato").innerHTML += giusto.length + " numeri";
 
     //visualizzo i numeri corretti e numeri sbagliati
