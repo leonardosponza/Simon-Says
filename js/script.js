@@ -42,10 +42,10 @@ setTimeout(function(){
         }
     
     }
-
     document.getElementById("risultato").innerHTML += giusto.length + " numeri";
-
-    //visualizzo i numeri corretti e numeri sbagliati
+    }
+    
+     //visualizzo i numeri corretti e numeri sbagliati
     document.getElementById("giusto").innerHTML += giusto;
     document.getElementById("sbagliato").innerHTML += sbagliato;
 
