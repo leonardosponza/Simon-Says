@@ -7,7 +7,6 @@ while(numeri.length < 5){
         numeri.push(random);
     }
 }
-
 alert(numeri);
 
 // countdown
@@ -24,10 +23,11 @@ var countdown = setInterval(function(){
 
  var giusto = [];
  var sbagliato = []
-setTimeout(function(){
+
+  setTimeout(function(){
     for(i=0; i<numeri.length; i++){
         var risposta = prompt("Inserisci i numeri");
-
+    
         //controllando che siano numeri
         while(isNaN(risposta)){
             alert("il dato non è un numero");
@@ -40,16 +40,18 @@ setTimeout(function(){
             sbagliato.push(risposta);
         
         }
-    
+      
     }
     document.getElementById("risultato").innerHTML += giusto.length + " numeri";
-    }
-    
-     //visualizzo i numeri corretti e numeri sbagliati
+    //visualizzo i numeri corretti e numeri sbagliati
     document.getElementById("giusto").innerHTML += giusto;
     document.getElementById("sbagliato").innerHTML += sbagliato;
-
     console.log(numeri);
+},30000)
+
+    
+
+    
 
 
     // funzione
